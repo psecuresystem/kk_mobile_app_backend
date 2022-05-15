@@ -1,0 +1,79 @@
+POST http://localhost:8000/register
+Content-Type: application/json
+
+{
+    "email": "visiondaniels@gmail.com",
+    "password": "vv"
+}
+
+###
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+    "email": "visiondaniels@gmail.com",
+    "password": "vv"
+}
+
+###
+GET http://localhost:8000/
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJlbWFpbCI6InZpc2lvbmRhbmllbHNAZ21haWwuY29tIiwiZXhwIjoxNjU1MDcxMDUxfQ.o2cKmm88_4WG2uReQu81210BpL8ijaVPU9dCas1fnoA
+
+###
+POST http://localhost:8000/kk/create
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJlbWFpbCI6InZpc2lvbmRhbmllbHNAZ21haWwuY29tIiwiZXhwIjoxNjU1MDcxMDUxfQ.o2cKmm88_4WG2uReQu81210BpL8ijaVPU9dCas1fnoA
+Content-Type: application/json
+
+{
+    "date": "24/5/22",
+    "title": "Jesus reigns",
+    "message": "A super duper long message",
+    "prayer": "God give us the grace to serve you more",
+    "questions": [
+        {
+            "question": "What is grace",
+            "options": [
+                "UnMerited favor",
+                "A",
+                "B",
+                "A or B"
+            ],
+            "answer": "A"
+        }
+    ]
+}
+
+###
+GET http://localhost:8000/kk/all
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJlbWFpbCI6InZpc2lvbmRhbmllbHNAZ21haWwuY29tIiwiZXhwIjoxNjU1MDcxMDUxfQ.o2cKmm88_4WG2uReQu81210BpL8ijaVPU9dCas1fnoA
+
+###
+GET http://localhost:8000/kk/single?date=23/5/22
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJlbWFpbCI6InZpc2lvbmRhbmllbHNAZ21haWwuY29tIiwiZXhwIjoxNjU1MDcxMDUxfQ.o2cKmm88_4WG2uReQu81210BpL8ijaVPU9dCas1fnoA
+
+###
+GET http://localhost:8000/kk/test?date=23/5/22
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJlbWFpbCI6InZpc2lvbmRhbmllbHNAZ21haWwuY29tIiwiZXhwIjoxNjU1MDcxMDUxfQ.o2cKmm88_4WG2uReQu81210BpL8ijaVPU9dCas1fnoA
+
+
+###
+POST http://localhost:8000/user/takeTest
+Content-Type: application/json
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJlbWFpbCI6InZpc2lvbmRhbmllbHNAZ21haWwuY29tIiwiZXhwIjoxNjU1MDcxMDUxfQ.o2cKmm88_4WG2uReQu81210BpL8ijaVPU9dCas1fnoA
+
+{
+    "date": "21/5/22"
+}
+
+###
+POST http://localhost:8000/user/readKK
+Content-Type: application/json
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJlbWFpbCI6InZpc2lvbmRhbmllbHNAZ21haWwuY29tIiwiZXhwIjoxNjU1MDcxMDUxfQ.o2cKmm88_4WG2uReQu81210BpL8ijaVPU9dCas1fnoA
+
+{
+    "date": "24/5/22"
+}
+
+###
+GET http://localhost:8000/user/takeTest
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJlbWFpbCI6InZpc2lvbmRhbmllbHNAZ21haWwuY29tIiwiZXhwIjoxNjU1MDcxMDUxfQ.o2cKmm88_4WG2uReQu81210BpL8ijaVPU9dCas1fnoA
